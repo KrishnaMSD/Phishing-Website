@@ -44,12 +44,6 @@ def getURL():
 		else:
 			value="Legitimate Website!!"
 			return render_template("home.html",error=value)
-@app.route('/getAbout')
-def getAbout():
-	return render_template('about.html')
-@app.route('/getAbout1')
-def getAbout1():
-	return render_template('about1.html')
 
 if __name__=="__main__":
 	app.run(debug=True)
